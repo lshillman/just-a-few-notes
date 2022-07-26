@@ -28,8 +28,7 @@ Simply type a note title and body into the page, and click the floppy disk icon 
 
 ## Demo video
 
-
-
+https://user-images.githubusercontent.com/5232938/180922019-bb7b9cb3-07f7-4bb7-b3cb-798e0f66292c.mov
 
 
 ## License
