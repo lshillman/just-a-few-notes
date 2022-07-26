@@ -13,5 +13,25 @@
         "title": "Heyoooo",
         "text": "test note 0",
         "id": "3af002fc-0337-42b5-a250-a250998f31f7"
+    },
+    {
+        "title": "testNote 4",
+        "text": "t's actually #3",
+        "id": "62c2a36c-dd56-4bfb-b5ac-aa00d8953465"
+    },
+    {
+        "title": "Here's a fun new note",
+        "text": "note note note!",
+        "id": "7068c01f-bed2-4061-959a-479886262447"
+    },
+    {
+        "title": "testNote 4",
+        "text": "t's actually #3",
+        "id": "c3aaf346-3710-4d23-ba76-386e8ec52eee"
+    },
+    {
+        "title": "Does this thing work?",
+        "text": "testy testy lemon zesty",
+        "id": "12b88ff9-5759-44ff-a08c-c8f84fc04f46"
     }
 ]

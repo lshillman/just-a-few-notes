@@ -21,7 +21,7 @@ notes.get('/', (req, res) => {
 // POST Route for a new note
 notes.post('/', (req, res) => {
   console.log("Save button clicked! " + req.body.title);
-  res.send(req.body);
+  // res.send(req.body);
   const { title, text } = req.body;
   console.log(title + ", " + text)
 
