@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend, writeToFile } = require('../helpers/fsUtils');
 const { v4: uuidv4 } = require('uuid');
 
 
@@ -14,6 +14,15 @@ notes.delete('/:id/', (req, res) => {
   console.log("Page is attempting to delete note " + req.params.id);
   readFromFile('./db/db.json').then((data) => {
     console.log(JSON.parse(data));
+    let noteData = JSON.parse(data);
+    for (let i = 0; i < noteData.length; i++){
+      if (noteData[i].id == req.params.id){
+        noteData.splice(i, 1);
+      }
+    }
+    console.log(noteData);
+    writeToFile('./db/db.json', noteData);
+    res.json(noteData);
   });
 });
 
