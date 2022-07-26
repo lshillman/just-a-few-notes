@@ -9,7 +9,13 @@ notes.get('/', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-
+// DELETE Route for a note
+notes.delete('/:id/', (req, res) => {
+  console.log("Page is attempting to delete note " + req.params.id);
+  readFromFile('./db/db.json').then((data) => {
+    console.log(JSON.parse(data));
+  });
+});
 
 
 
